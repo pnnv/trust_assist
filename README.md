@@ -1,259 +1,223 @@
-# Trust Assistant
+# 🛡️ Trust Assistant
 
-[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](LICENSE) [![Node.js CI](https://img.shields.io/github/actions/workflow/status/yourusername/trust-assistant/ci.yml?branch=main\&label=CI)](https://github.com/yourusername/trust-assistant/actions)
+<div align="center">
 
-A modern web application providing AI-powered assistance with trust and verification features. Built with a React.js frontend and Node.js/Express backend, this application leverages cutting-edge AI technologies to deliver a seamless and secure user experience.
+**AI-Powered Trust & Verification Platform**
 
----
+*Building confidence through intelligent assistance*
 
-## 🚀 Table of Contents
+[![Made with React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactjs.org/)
+[![Powered by Node.js](https://img.shields.io/badge/Node.js-18+-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org/)
+[![AI Integration](https://img.shields.io/badge/AI-Google%20%7C%20HuggingFace-FF6B6B?style=for-the-badge)](https://ai.google/)
+[![License: ISC](https://img.shields.io/badge/License-ISC-blue?style=for-the-badge)](LICENSE)
 
-- [Trust Assistant](#trust-assistant)
-	- [🚀 Table of Contents](#-table-of-contents)
-	- [🌟 Features](#-features)
-	- [🛠️ Tech Stack](#️-tech-stack)
-		- [Frontend](#frontend)
-		- [Backend](#backend)
-		- [DevOps \& Tools](#devops--tools)
-	- [📋 Prerequisites](#-prerequisites)
-	- [🔧 Installation](#-installation)
-	- [⚙️ Configuration](#️-configuration)
-		- [Environment Variables (Backend)](#environment-variables-backend)
-		- [Frontend Configuration](#frontend-configuration)
-	- [▶️ Running the Application](#️-running-the-application)
-	- [📁 Project Structure](#-project-structure)
-	- [💡 Usage](#-usage)
-	- [🧪 Testing](#-testing)
-	- [🤝 Contributing](#-contributing)
-		- [Code Style \& Guidelines](#code-style--guidelines)
-	- [📜 License](#-license)
-	- [🙏 Acknowledgments](#-acknowledgments)
-	- [📬 Contact](#-contact)
+</div>
 
 ---
 
-## 🌟 Features
+## ✨ What is Trust Assistant?
 
-* **Modern UI/UX**: Responsive and accessible interface built with React.js and Tailwind CSS
-* **AI-Powered Verification**: Integrates with Google Generative AI and Hugging Face models for advanced trust analysis
-* **Secure Authentication**: JWT-based user authentication and authorization
-* **Real-time Processing**: Optimized API endpoints for low-latency responses
-* **Scalable Architecture**: Modular codebase with best practices for maintainability and scaling
-* **Extensible**: Easily add new AI models or data sources
+Trust Assistant is a next-generation web application that combines the power of artificial intelligence with modern web technologies to provide intelligent trust and verification services. Built with performance, security, and user experience at its core, it delivers a seamless platform for AI-powered assistance.
 
----
+## 🚀 Key Features
 
-<!-- ## 🎬 Demo
+### 🎨 **Modern Interface**
+- Beautiful, responsive design built with React 19 and Tailwind CSS
+- Intuitive user experience with Radix UI components
+- Dark/light mode support for comfortable usage
 
-> Add screenshots or GIFs here to showcase key flows (e.g., login, analysis results, dashboards).
+### 🤖 **AI-Powered Intelligence**
+- Integration with Google's latest Generative AI models
+- Advanced natural language processing via Hugging Face
+- Real-time AI responses and analysis
 
-![Homepage Preview](docs/demo-homepage.png)
-![Analysis Flow](docs/demo-analysis.png)
+### 🔒 **Enterprise-Grade Security**
+- JWT-based authentication system
+- Secure API endpoints with proper validation
+- Data protection and privacy compliance
 
---- -->
+### ⚡ **High Performance**
+- Lightning-fast React frontend with Vite build optimization
+- Efficient Node.js backend with Express framework
+- MongoDB for scalable data management
 
-## 🛠️ Tech Stack
+## 🛠️ Technology Stack
 
-### Frontend
+<table>
+<tr>
+<td align="center" width="50%">
 
-* **Framework**: React.js (v19) with Vite
-* **Styling**: Tailwind CSS
-* **UI Components**: Radix UI
-* **Data Fetching & State**: React Query, Axios
-* **Routing**: React Router (if applicable)
+### 🎨 Frontend
+- **React.js 19** - Modern UI framework
+- **Vite** - Next-generation build tool
+- **Tailwind CSS** - Utility-first styling
+- **Radix UI** - Accessible component library
+- **React Query** - Server state management
+- **Axios** - HTTP client library
 
-### Backend
+</td>
+<td align="center" width="50%">
 
-* **Runtime & Framework**: Node.js (v18+) with Express
-* **Database**: MongoDB (via Mongoose ODM)
-* **Authentication**: JSON Web Tokens (JWT)
-* **AI Integrations**:
+### ⚙️ Backend
+- **Node.js & Express** - Server runtime & framework
+- **MongoDB & Mongoose** - Database & ODM
+- **JWT** - Authentication tokens
+- **Google AI** - Generative AI integration
+- **Hugging Face** - ML model API
 
-  * Google Generative AI (via official APIs)
-  * Hugging Face Inference API
+</td>
+</tr>
+</table>
 
-### DevOps & Tools
+## 🏁 Quick Start
 
-* **Version Control**: Git & GitHub
-* **CI/CD**: GitHub Actions
-* **Environment**: dotenv for configuration
-* **Linting & Formatting**: ESLint, Prettier
+### Prerequisites
 
----
+Before you begin, ensure you have the following installed:
 
-## 📋 Prerequisites
+- **Node.js** (v18 or later) - [Download here](https://nodejs.org/)
+- **npm** or **yarn** - Package manager
+- **MongoDB** - [Local installation](https://www.mongodb.com/try/download/community) or [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
+- **API Keys** - Google AI and Hugging Face credentials
 
-* **Node.js**: v18 or later
-* **Package Manager**: npm or yarn
-* **Database**: MongoDB instance (local or cloud)
-* **API Keys**: Google AI, Hugging Face
+### 📦 Installation
 
----
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/trust-assistant.git
+cd trust-assistant
 
-## 🔧 Installation
+# Install backend dependencies
+cd backend
+cp .env.example .env
+npm install
 
-1. **Clone the repository**
-
-   ```bash
-   git clone https://github.com/yourusername/trust-assistant.git
-   cd trust-assistant
-   ```
-
-2. **Backend Setup**
-
-   ```bash
-   cd backend
-   cp .env.example .env
-   # Open .env and add your configuration values
-   npm install
-   ```
-
-3. **Frontend Setup**
-
-   ```bash
-   cd ../frontend
-   npm install
-   ```
-
----
-
-## ⚙️ Configuration
-
-### Environment Variables (Backend)
-
-Create a `.env` file in the `backend` directory (copy from `.env.example`) and configure:
-
-```
-MONGODB_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret
-GOOGLE_AI_KEY=your_google_ai_key
-HUGGINGFACE_API_KEY=your_huggingface_api_key
-PORT=4000            # or your preferred port
+# Install frontend dependencies
+cd ../frontend
+npm install
 ```
 
-### Frontend Configuration
+### 🔧 Configuration
 
-* If the frontend needs environment variables (e.g., API base URL), create a `.env` in `frontend`:
+Create a `.env` file in the `backend` directory:
 
+```env
+# Database
+MONGODB_URI=mongodb://localhost:27017/trust-assistant
+
+# Authentication
+JWT_SECRET=your-super-secret-jwt-key-here
+
+# AI Services
+GOOGLE_AI_KEY=your-google-ai-api-key
+HUGGINGFACE_API_KEY=your-huggingface-api-key
+
+# Server Configuration
+PORT=3000
+NODE_ENV=development
 ```
-VITE_API_BASE_URL=http://localhost:4000/api
+
+### 🎯 Running the Application
+
+**Backend Server:**
+```bash
+cd backend
+npm run dev
 ```
 
-> **Note**: Prefix frontend env vars with `VITE_` for Vite to expose them correctly.
+**Frontend Application:**
+```bash
+cd frontend
+npm run dev
+```
 
----
+🌐 **Access the application:** [http://localhost:5173](http://localhost:5173)
 
-## ▶️ Running the Application
-
-1. **Start Backend**
-
-   ```bash
-   cd backend
-   npm run dev
-   ```
-
-   By default, the server listens on `http://localhost:4000`.
-
-2. **Start Frontend**
-
-   ```bash
-   cd ../frontend
-   npm run dev
-   ```
-
-   Frontend runs at `http://localhost:5173` by default.
-
-3. **Access**
-   Open [http://localhost:5173](http://localhost:5173) in your browser.
-
----
-
-## 📁 Project Structure
+## 📁 Project Architecture
 
 ```
 trust-assistant/
-├── backend/               # Backend server
-│   ├── src/               # Source code (routes, controllers, models, services)
-│   ├── .env.example       # Env variables example
-│   ├── package.json       # Backend dependencies & scripts
-│   └── README.md          # Backend-specific instructions (if needed)
-├── frontend/              # Frontend React application
-│   ├── public/            # Static assets (favicon, index.html template)
-│   ├── src/               # React components, hooks, pages, utils
-│   ├── .env.example       # Frontend env variables example
-│   └── package.json       # Frontend dependencies & scripts
-├── docs/                  # Documentation, screenshots, design assets
-├── .github/               # GitHub workflows, issue templates
-├── README.md              # This file
-└── LICENSE                # License file
+├── 📁 backend/                 # Server-side application
+│   ├── 📁 src/
+│   │   ├── 📁 controllers/     # Route controllers
+│   │   ├── 📁 models/          # Database models
+│   │   ├── 📁 routes/          # API routes
+│   │   ├── 📁 middleware/      # Custom middleware
+│   │   └── 📄 server.js        # Entry point
+│   ├── 📄 .env.example         # Environment template
+│   └── 📄 package.json         # Dependencies
+├── 📁 frontend/                # Client-side application
+│   ├── 📁 public/              # Static assets
+│   ├── 📁 src/
+│   │   ├── 📁 components/      # React components
+│   │   ├── 📁 pages/           # Page components
+│   │   ├── 📁 hooks/           # Custom hooks
+│   │   ├── 📁 utils/           # Utility functions
+│   │   └── 📄 main.jsx         # App entry point
+│   └── 📄 package.json         # Dependencies
+├── 📄 README.md                # Project documentation
+└── 📄 LICENSE                  # License file
 ```
 
----
+## 🔌 API Endpoints
 
-## 💡 Usage
-
-1. **Sign Up / Login**: Register a new account or log in with existing credentials.
-2. **Dashboard**: Overview of analysis options and recent activity.
-3. **Trust Analysis**: Submit product or content details to receive AI-driven trust/verification feedback.
-4. **History**: Review past analyses and results.
-
-> Customize or extend workflows based on your specific use case.
-
----
-
-## 🧪 Testing
-
-* **Backend Tests**: Add or run tests (e.g., using Jest or Mocha).
-
-  ```bash
-  cd backend
-  npm test
-  ```
-* **Frontend Tests**: Use React Testing Library or similar.
-
-  ```bash
-  cd frontend
-  npm test
-  ```
-
-> Ensure to configure testing environment variables as needed.
-
----
+| Method | Endpoint | Description |
+|---------|----------|-------------|
+| `POST` | `/api/auth/login` | User authentication |
+| `POST` | `/api/auth/register` | User registration |
+| `GET` | `/api/user/profile` | Get user profile |
+| `POST` | `/api/ai/generate` | AI content generation |
+| `POST` | `/api/trust/verify` | Trust verification |
 
 ## 🤝 Contributing
 
+We welcome contributions! Here's how you can help:
+
 1. **Fork** the repository
-2. **Create** a feature branch: `git checkout -b feature/awesome-feature`
-3. **Commit** your changes: `git commit -m "Add awesome feature"`
-4. **Push** to the branch: `git push origin feature/awesome-feature`
-5. **Open** a Pull Request and describe your changes
+2. **Create** a feature branch (`git checkout -b feature/amazing-feature`)
+3. **Commit** your changes (`git commit -m 'Add amazing feature'`)
+4. **Push** to the branch (`git push origin feature/amazing-feature`)
+5. **Open** a Pull Request
 
-### Code Style & Guidelines
+## 📋 Development Scripts
 
-* Follow existing code conventions
-* Write clear, concise commits
-* Add tests for new features or bug fixes
-* Ensure linting/formatting passes (ESLint, Prettier)
+### Backend
+```bash
+npm run dev      # Start development server
+npm start        # Start production server
+npm test         # Run tests
+npm run lint     # Check code style
+```
 
----
+### Frontend
+```bash
+npm run dev      # Start development server
+npm run build    # Build for production
+npm run preview  # Preview production build
+npm test         # Run tests
+```
 
-## 📜 License
+## 📄 License
 
-Licensed under the ISC License. See the [LICENSE](LICENSE) file for details.
-
----
+This project is licensed under the **ISC License** - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
-* [Google AI](https://ai.google/)
-* [Hugging Face](https://huggingface.co/)
-* [React](https://reactjs.org/)
-* [Vite](https://vitejs.dev/)
-* [Tailwind CSS](https://tailwindcss.com/)
-* [Radix UI](https://www.radix-ui.com/)
+Special thanks to the amazing open-source community and these fantastic tools:
+
+- [Google AI](https://ai.google/) - For powerful generative AI capabilities
+- [Hugging Face](https://huggingface.co/) - For democratizing machine learning
+- [React](https://reactjs.org/) - For the incredible UI framework
+- [Vite](https://vitejs.dev/) - For blazing fast build tools
+- [Tailwind CSS](https://tailwindcss.com/) - For beautiful, utility-first styling
+- [MongoDB](https://www.mongodb.com/) - For flexible, scalable database solutions
 
 ---
 
-## 📬 Contact
+<div align="center">
 
-For questions or feedback, open an issue or reach out to \[[your-email@example.com](mailto:your-email@example.com)].
+**Built with ❤️ by the Trust Assistant Team**
+
+[⭐ Star this repo](https://github.com/yourusername/trust-assistant) • [🐛 Report Bug](https://github.com/yourusername/trust-assistant/issues) • [💡 Request Feature](https://github.com/yourusername/trust-assistant/issues)
+
+</div>
