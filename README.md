@@ -15,32 +15,6 @@
 
 ---
 
-## ✨ What is Trust Assistant?
-
-Trust Assistant is a next-generation web application that combines the power of artificial intelligence with modern web technologies to provide intelligent trust and verification services. Built with performance, security, and user experience at its core, it delivers a seamless platform for AI-powered assistance.
-
-## 🚀 Key Features
-
-### 🎨 **Modern Interface**
-- Beautiful, responsive design built with React 19 and Tailwind CSS
-- Intuitive user experience with Radix UI components
-- Dark/light mode support for comfortable usage
-
-### 🤖 **AI-Powered Intelligence**
-- Integration with Google's latest Generative AI models
-- Advanced natural language processing via Hugging Face
-- Real-time AI responses and analysis
-
-### 🔒 **Enterprise-Grade Security**
-- JWT-based authentication system
-- Secure API endpoints with proper validation
-- Data protection and privacy compliance
-
-### ⚡ **High Performance**
-- Lightning-fast React frontend with Vite build optimization
-- Efficient Node.js backend with Express framework
-- MongoDB for scalable data management
-
 ## 🛠️ Technology Stack
 
 <table>
@@ -63,7 +37,6 @@ Trust Assistant is a next-generation web application that combines the power of 
 - **MongoDB & Mongoose** - Database & ODM
 - **JWT** - Authentication tokens
 - **Google AI** - Generative AI integration
-- **Hugging Face** - ML model API
 
 </td>
 </tr>
@@ -78,14 +51,14 @@ Before you begin, ensure you have the following installed:
 - **Node.js** (v18 or later) - [Download here](https://nodejs.org/)
 - **npm** or **yarn** - Package manager
 - **MongoDB** - [Local installation](https://www.mongodb.com/try/download/community) or [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
-- **API Keys** - Google AI and Hugging Face credentials
+- **API Keys** - Google AI credentials
 
 ### 📦 Installation
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/trust-assistant.git
-cd trust-assistant
+git clone https://github.com/pnnv/trust_assist.git
+cd trust_assist
 
 # Install backend dependencies
 cd backend
@@ -103,14 +76,13 @@ Create a `.env` file in the `backend` directory:
 
 ```env
 # Database
-MONGODB_URI=mongodb://localhost:27017/trust-assistant
+MONGODB_URI=mongodb://localhost:696969/trust_assist
 
 # Authentication
 JWT_SECRET=your-super-secret-jwt-key-here
 
 # AI Services
 GOOGLE_AI_KEY=your-google-ai-api-key
-HUGGINGFACE_API_KEY=your-huggingface-api-key
 
 # Server Configuration
 PORT=3000
@@ -206,7 +178,6 @@ This project is licensed under the **ISC License** - see the [LICENSE](LICENSE) 
 Special thanks to the amazing open-source community and these fantastic tools:
 
 - [Google AI](https://ai.google/) - For powerful generative AI capabilities
-- [Hugging Face](https://huggingface.co/) - For democratizing machine learning
 - [React](https://reactjs.org/) - For the incredible UI framework
 - [Vite](https://vitejs.dev/) - For blazing fast build tools
 - [Tailwind CSS](https://tailwindcss.com/) - For beautiful, utility-first styling
@@ -218,6 +189,6 @@ Special thanks to the amazing open-source community and these fantastic tools:
 
 **Built with ❤️ by the Trust Assistant Team**
 
-[⭐ Star this repo](https://github.com/yourusername/trust-assistant) • [🐛 Report Bug](https://github.com/yourusername/trust-assistant/issues) • [💡 Request Feature](https://github.com/yourusername/trust-assistant/issues)
+[⭐ Star this repo](https://github.com/pnnv/trust-assist) • [🐛 Report Bug](https://github.com/pnnv/trust-assist/issues) • [💡 Request Feature](https://github.com/pnnv/trust-assist/issues)
 
 </div>
