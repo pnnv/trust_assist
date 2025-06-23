@@ -9,7 +9,7 @@
 [![Made with React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactjs.org/)
 [![Powered by Node.js](https://img.shields.io/badge/Node.js-18+-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org/)
 [![AI Integration](https://img.shields.io/badge/AI-Google%20%7C%20HuggingFace-FF6B6B?style=for-the-badge)](https://ai.google/)
-[![License: ISC](https://img.shields.io/badge/License-ISC-blue?style=for-the-badge)](LICENSE)
+<!-- [![License: ISC](https://img.shields.io/badge/License-ISC-blue?style=for-the-badge)](LICENSE) -->
 
 </div>
 
@@ -108,7 +108,7 @@ npm run dev
 ## 📁 Project Architecture
 
 ```
-trust-assistant/
+trust_assist/
 ├── 📁 backend/                 # Server-side application
 │   ├── 📁 src/
 │   │   ├── 📁 controllers/     # Route controllers
@@ -151,7 +151,7 @@ We welcome contributions! Here's how you can help:
 4. **Push** to the branch (`git push origin feature/amazing-feature`)
 5. **Open** a Pull Request
 
-## 📋 Development Scripts
+<!-- ## 📋 Development Scripts
 
 ### Backend
 ```bash
@@ -167,12 +167,12 @@ npm run dev      # Start development server
 npm run build    # Build for production
 npm run preview  # Preview production build
 npm test         # Run tests
-```
+``` -->
 
-## 📄 License
+<!-- ## 📄 License
 
-This project is licensed under the **ISC License** - see the [LICENSE](LICENSE) file for details.
-
+This project is licensed under the **ISC License** - see the [LICENSE](LICENSE) file for details. -->
+<!-- 
 ## 🙏 Acknowledgments
 
 Special thanks to the amazing open-source community and these fantastic tools:
@@ -181,13 +181,13 @@ Special thanks to the amazing open-source community and these fantastic tools:
 - [React](https://reactjs.org/) - For the incredible UI framework
 - [Vite](https://vitejs.dev/) - For blazing fast build tools
 - [Tailwind CSS](https://tailwindcss.com/) - For beautiful, utility-first styling
-- [MongoDB](https://www.mongodb.com/) - For flexible, scalable database solutions
+- [MongoDB](https://www.mongodb.com/) - For flexible, scalable database solutions -->
 
 ---
 
 <div align="center">
-
-**Built with ❤️ by the Trust Assistant Team**
+<!-- 
+**Built with ❤️ by the Trust Assistant Team** -->
 
 [⭐ Star this repo](https://github.com/pnnv/trust-assist) • [🐛 Report Bug](https://github.com/pnnv/trust-assist/issues) • [💡 Request Feature](https://github.com/pnnv/trust-assist/issues)
 
