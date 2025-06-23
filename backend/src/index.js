@@ -57,11 +57,35 @@ app.use("/api/users",userRouter)
 app.use("/api/moderators",moderatorRouter)
 
 
+// Get port from environment and store in Express.
+const port = parseInt(process.env.PORT, 10) || 8000;
+
 connectDB()
 .then(()=>{
-    app.listen(process.env.PORT || 8000,()=>{
-        console.log(`Server is running at port: ${process.env.PORT}`);
-    })
+    const server = app.listen(port, '0.0.0.0', () => {
+        console.log(`Server is running at port: ${port}`);
+        console.log(`Server URL: http://localhost:${port}`);
+    });
+    
+    // Handle server errors
+    server.on('error', error => {
+        if (error.syscall !== 'listen') {
+            throw error;
+        }
+        
+        switch (error.code) {
+            case 'EACCES':
+                console.error(`Port ${port} requires elevated privileges`);
+                process.exit(1);
+                break;
+            case 'EADDRINUSE':
+                console.error(`Port ${port} is already in use`);
+                process.exit(1);
+                break;
+            default:
+                throw error;
+        }
+    });
 })
 .catch((error)=>{
     console.log("MongoDB connection failed! ",error);
