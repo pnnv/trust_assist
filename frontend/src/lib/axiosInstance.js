@@ -1,7 +1,12 @@
 import axios from "axios";
 
+// Ensure the base URL ends with a slash and includes /api
+const baseURL = import.meta.env.VITE_API_BASE_URL.endsWith('/') 
+    ? `${import.meta.env.VITE_API_BASE_URL}api/` 
+    : `${import.meta.env.VITE_API_BASE_URL}/api/`;
+
 export const axiosInstance = axios.create({
-    baseURL: import.meta.env.VITE_API_BASE_URL,
+    baseURL: baseURL,
     withCredentials: true,
 });
 
