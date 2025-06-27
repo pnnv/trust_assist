@@ -6,7 +6,7 @@
 
 [![Made with React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactjs.org/)
 [![Powered by Node.js](https://img.shields.io/badge/Node.js-18+-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org/)
-[![AI Integration](https://img.shields.io/badge/AI-Google%20%7C%20HuggingFace-FF6B6B?style=for-the-badge)](https://ai.google/)
+[![AI Integration](https://img.shields.io/badge/AI-Google)](https://ai.google/)
 <!-- [![License: ISC](https://img.shields.io/badge/License-ISC-blue?style=for-the-badge)](LICENSE) -->
 
 </div>
@@ -187,6 +187,6 @@ Special thanks to the amazing open-source community and these fantastic tools:
 <!-- 
 **Built with ❤️ by the Trust Assistant Team** -->
 
-[⭐ Star this repo](https://github.com/pnnv/trust-assist) • [🐛 Report Bug](https://github.com/pnnv/trust-assist/issues) • [💡 Request Feature](https://github.com/pnnv/trust-assist/issues)
+[⭐ Star this repo](https://github.com/pnnv/trust_assist) • [🐛 Report Bug](https://github.com/pnnv/trust_assist/issues) • [💡 Request Feature](https://github.com/pnnv/trust_assist/issues)
 
 </div>
