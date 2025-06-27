@@ -6,7 +6,8 @@
 
 [![Made with React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactjs.org/)
 [![Powered by Node.js](https://img.shields.io/badge/Node.js-18+-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org/)
-[![AI Integration](https://img.shields.io/badge/AI-Google)](https://ai.google/)
+[![AI Integration](https://img.shields.io/badge/AI-Google%20AI-FF6B6B?style=for-the-badge)](https://ai.google/)
+
 <!-- [![License: ISC](https://img.shields.io/badge/License-ISC-blue?style=for-the-badge)](LICENSE) -->
 
 </div>
